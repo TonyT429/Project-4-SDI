@@ -19,6 +19,14 @@
 // string separator, return a string with the first separator changed to the second:
 // "a,b,c" + "," + "/" -> "a/b/c".
 
+var re = /,/gi;  
+var myString = "123,456,789,"; 
+var newstr = str.replace(re, "/");  
+console.log(newstr);
+
+
+
+
 // NUMBER:
 // 06) Format a number to use a specific number of decimal places, as for money: 2.1 -> 2.10
 
@@ -26,11 +34,15 @@
 
 // 08) Find the number of hours or days difference between two dates.
 
+// I think going Julian date would work, found an equation but it is not translating to Javascript.
+/*
 var y= 2012;
     m= 4;
     d= 29;
 
-var jd = (367y --7[y + (m+9)/12]/4 --3([y+(m-9)/7]/100 +1)/4 + (275m)/9 + d + 1721029);
+JD = 367y - <(7(y+<(m+9)/12>))/4> + <(275m)/9> + d + 1721013.5 + UT/24 - 0.5sign(100y+m-190002.5) + 0.5
+
+var jd = (367y --7(y + (m+9)/12)/4 --3([y+(m-9)/7]/100 +1)/4 + (275m)/9 + d + 1721029);
 // var jd= (d-32075+1461*(y+4800+(m-14)/12)/4+367*(m-2-(m-14)/12*12)2)/12-3*((y+4900+(m-14)/12)/100)/4);
 
 console.log(jd);
@@ -65,7 +77,7 @@ else
     alert("Different");
 }
 
-
+*/
 // 09) Given a string version of a number such as "42", return a value as an actual Number, 
 // such as 42.
 
