@@ -19,12 +19,15 @@
 // string separator, return a string with the first separator changed to the second:
 // "a,b,c" + "," + "/" -> "a/b/c".
 
-var re = /,/gi;  
-var myString = "123,456,789,"; 
-var newstr = str.replace(re, "/");  
-console.log(newstr);
+var aStr = "123,456,789,10,11,12,13,14";  
 
-
+function myStr () {
+    var re = /,/gi;  
+    var getStr = aStr;
+    var newStr = str.replace(re, "/");
+    return newStr;
+    }
+myStr()
 
 
 // NUMBER:
@@ -46,15 +49,18 @@ var jd = (367y --7(y + (m+9)/12)/4 --3([y+(m-9)/7]/100 +1)/4 + (275m)/9 + d + 17
 // var jd= (d-32075+1461*(y+4800+(m-14)/12)/4+367*(m-2-(m-14)/12*12)2)/12-3*((y+4900+(m-14)/12)/100)/4);
 
 console.log(jd);
+*/
 	
 //Second thought - but only gives difference in days, not hours...
+var d1=new Date("April 29, 1959 12:00 PM"),
+    d2=new Date("July 4, 2012 03:30 AM");
 
-var d1=new Date("April 25, 2012 12:00 PM"),
-    d2=new Date("April 29, 2012 03:30 AM"),
-	one_day=1000*60*60*24;
-
-console.log(Math.ceil((d2.getTime()-d1.getTime())/(one_day))+
-" days left until my birthday!")
+function tweenDays() {
+    var aDay = (1000 * 60 * 60 * 24);
+    daysTween = (Math.ceil((d2.getTime()-d1.getTime())/(aDay)));
+    return daysTween;
+    }
+tweenDays()
 
 // third idea but still not converting date - damn!
 

@@ -4,39 +4,23 @@
 // Date: April , 2012
 
 
-	
+// #5)
 
-var json2 = {
-	"dragons": [
-		{
-			"name": "Emerald", 
-			"color": "green",
-			"type":	"water dragon",
-			"attack": "spit corrosive acid"
-		},
-		{
-			"name": "Blaze", 
-			"color": "red",
-			"type": "fire dragon",
-			"attack": "vomit napalm"
-		},
-		{ 
-			"name": "Bolt",
-			"color": "blue",
-			"type": "electric dragon", 
-			"attack": "breath lightning"
-		},
-		{ 
-			"name": "Sleet", 
-			"color": "white",
-			"type": "ice dragon",
-			"attack": "spray cryonic blasts"
-		 }
-	]
-};
+function myStr () {
+    var re = /,/gi;  
+    var getStr = aStr;
+    var newStr = str.replace(re, "/");
+    return newStr;
+    }
+myStr()	
 
 
-var shotShells = 10;
-	magRounds = 10;
-	clips45 = 2;
-	rifleRounds = 12;
+// #8)
+
+function tweenDays() {
+    var aDay = (1000 * 60 * 60 * 24);
+    daysTween = (Math.ceil((d2.getTime()-d1.getTime())/(aDay)));
+    return daysTween;
+    }
+tweenDays()
+
