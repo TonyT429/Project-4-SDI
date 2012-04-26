@@ -39,6 +39,7 @@ myStr()
 
 // I think going Julian date would work, found an equation but it is not translating to Javascript.
 /*
+// this was my first thought but I could not get the equation to work in Javascript!!
 var y= 2012;
     m= 4;
     d= 29;
@@ -86,6 +87,15 @@ else
 */
 // 09) Given a string version of a number such as "42", return a value as an actual Number, 
 // such as 42.
+
+var nuStr = "42";  
+
+function numChk () {
+    var isNum = parseInt(nuStr)
+    return isNum;
+    }
+numChk()
+
 
 // ARRAY
 // 10) Find the smallest value in an array that is greater than a given number.

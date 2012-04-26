@@ -4,7 +4,7 @@
 // Date: April , 2012
 
 
-// #5)
+// #05
 
 function myStr () {
     var re = /,/gi;  
@@ -15,7 +15,7 @@ function myStr () {
 myStr()	
 
 
-// #8)
+// #08
 
 function tweenDays() {
     var aDay = (1000 * 60 * 60 * 24);
@@ -23,4 +23,12 @@ function tweenDays() {
     return daysTween;
     }
 tweenDays()
+
+// #09
+
+function numChk () {
+    var isNum = parseInt(nuStr)
+    return isNum;
+    }
+numChk()
 
