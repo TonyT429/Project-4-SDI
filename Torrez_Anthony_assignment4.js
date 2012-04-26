@@ -15,6 +15,15 @@
 
 // 04) Title-case a string (split into words, then uppercase the first letter of each word)
 
+var chgStr = "this is a test";
+
+
+function propCase() {
+    return chgStr.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+};
+
+propCase()
+
 // 05) Given a string that is a list of things separated by a given string, as well as another 
 // string separator, return a string with the first separator changed to the second:
 // "a,b,c" + "," + "/" -> "a/b/c".
@@ -61,7 +70,7 @@ function tweenDays() {
     daysTween = (Math.ceil((d2.getTime()-d1.getTime())/(aDay)));
     return daysTween;
     }
-tweenDays()
+tweenDays();
 
 // third idea but still not converting date - damn!
 
@@ -94,7 +103,7 @@ function numChk () {
     var isNum = parseInt(nuStr)
     return isNum;
     }
-numChk()
+numChk();
 
 
 // ARRAY

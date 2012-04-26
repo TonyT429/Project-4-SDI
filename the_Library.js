@@ -3,6 +3,13 @@
 // Student: Anthony Torrez
 // Date: April , 2012
 
+// #04 
+
+function propCase() {
+    return chgStr.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+};
+
+propCase()
 
 // #05
 
