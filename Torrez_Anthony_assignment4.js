@@ -42,6 +42,16 @@ myStr()
 // NUMBER:
 // 06) Format a number to use a specific number of decimal places, as for money: 2.1 -> 2.10
 
+var myNumber = 40025.4 
+
+function decimal2() { 
+    var chgNum = myNumber;
+    var newNum = chgNum.toFixed(2);  
+    return newNum;	 
+};
+decimal2();
+
+
 // 07) Fuzzy-match a number: is the number above or below a number within a certain percent?
 
 // 08) Find the number of hours or days difference between two dates.

@@ -21,6 +21,14 @@ function myStr () {
     }
 myStr()	
 
+// #06
+
+function decimal2() { 
+    var chgNum = myNumber;
+    var newNum = chgNum.toFixed(2);  
+    return newNum;	 
+};
+decimal2();
 
 // #08
 
